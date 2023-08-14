@@ -1,10 +1,10 @@
-const express = require('express');
-const bodyParser = require('body-parser');
-const fs = require("fs");
-const cors = require("cors");
-const path = require("path");
-const app = express();
+import express from 'express';
+import bodyParser from 'body-parser';
+import fs from 'fs';
+import cors from 'cors'; 
+import path from 'path';
 
+const app = express();
 app.use (cors());
 app.use(bodyParser.json());
 
@@ -102,7 +102,7 @@ app.delete('/todos/:id', (req, res) => {
 
 app.get("/" , (req , res) =>{
   
-  res.sendFile(path.join(__dirname,"index2.html"));
+  res.sendFile(path.join(__dirname,"myapp.html"));
 });
 
 // for all other routes, return 404
