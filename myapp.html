@@ -23,7 +23,7 @@
 
     function todosCallback(data) {
         var parentElement = document.getElementById("mainArea");
-        // parentElement.innerHTML = JSON.stringify(data);
+        // parentElement.innerHTML = (data);
         for (var i = 0; i<data.length; i++) {
             var childElement = document.createElement("div");
 
@@ -97,7 +97,5 @@
     <input type="text" id="description"></input> -->
 
     <button onclick="onPress()">Add Todo</button>
-    <div id="mainArea">
-
-    </div>
+    <div id="mainArea"> </div>
 </body>
