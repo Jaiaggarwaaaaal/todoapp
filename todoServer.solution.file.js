@@ -1,8 +1,12 @@
-import express from 'express';
-import bodyParser from 'body-parser';
-import fs from 'fs';
-import cors from 'cors'; 
-import path from 'path';
+// Change import statements to require statements
+const express = require('express');
+const bodyParser = require('body-parser');
+const fs = require('fs');
+const cors = require('cors');
+const path = require('path');
+
+// ... rest of your code
+
 
 const app = express();
 app.use (cors());
@@ -110,4 +114,4 @@ app.use((req, res, next) => {
   res.status(200).send();
 });
 
-app.listen(3002);
+app.listen(3000);
